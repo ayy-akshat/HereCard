@@ -4,6 +4,8 @@ This is the FRONTEND repository for HereCard.
 ## Website: [Click](https://herecard.tech/)
 ## BACKEND Repository: [ayy-akshat/HereCardBackend](https://github.com/ayy-akshat/HereCardBackend)
 
+### *The pitch video link is in Devpost.*
+
 ---
 
 # HereCard
