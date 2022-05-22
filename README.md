@@ -3,6 +3,7 @@
 ## Website: [Click](https://herecard.tech/)
 ## FRONTEND Repository: [ayy-akshat/HereCard](https://github.com/ayy-akshat/HereCard)
 ## BACKEND Repository: [ayy-akshat/HereCardBackend](https://github.com/ayy-akshat/HereCardBackend)
+## ARDUINO (hardware code) Repository: [ayy-akshat/HereCard_Arduino](https://github.com/ayy-akshat/HereCard_Arduino)
 
 ### *Pitch video link: [Watch on YouTube](https://youtu.be/3yAkVwxWdqA).*
 
