@@ -1,7 +1,7 @@
 # HereCard
 This is the FRONTEND repository for HereCard.
 
-## Website: [Click](https://HereCard.akze.repl.co)
+## Website: [Click](https://herecard.tech/)
 ## BACKEND Repository: [ayy-akshat/HereCardBackend](https://github.com/ayy-akshat/HereCardBackend)
 
 ---
