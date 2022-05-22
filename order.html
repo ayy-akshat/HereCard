@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Order | HereCard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+        <h1 style="margin-left:20px">
+            <a href="index.html" id="main-title">HereCard</a>
+        </h1>
+        
+        <div class="top-bar-right">
+            <div id="login-or-profile" style="margin-right:20px">
+                <!-- Default login button. Use javascript to check if already logged in. If so, switcht to profile icon-->
+                
+                <a href="login.html" id="header-login">
+                    <button>
+                    Login
+                    </button>
+                </a>
+                
+                <a href="profile.html" id="header-profile" style="display:none">
+                    <img class="user-img" src="assets/pfp.png" width="50px" height="50px">
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleHamburgerMenu()">☰</button>
+        </div>
+        <div class="hamburger-option-container" id="hamburger-menu">
+            <a class="hamburger-option" href="index.html" id="hb-home">
+                Home
+            </a>
+            <a class="hamburger-option" href="profile.html" id="hb-profile">
+                Profile
+            </a>
+            <a class="hamburger-option" href="dashboard.html" id="hb-dashboard">
+                Dashboard
+            </a>
+            <a class="hamburger-option" href="order.html" id="hb-order">
+                Order
+            </a>
+            <a class="hamburger-option" href="login.html" id="hb-login">
+                Login
+            </a>
+            <a class="hamburger-option" href="javascript:firebase.auth().signOut()" id="hb-signout">
+                Sign Out
+            </a>
+        </div>
+    </div>
+
+    <div class="full-content">
+        <div style="height: 30px"></div>
+        <div class="box" style="width: 60vw">
+            <div class="row">
+            <h2>Order HereCard For Your Classroom</h2>
+            </div>
+            <div class="field">
+                <h3>1. Enter the following information: </h3>
+                <div class="input-section">
+                    <label for="signup-name">Full Name<span style="color:red">*</span></label>
+                    <br/>
+                    <input
+                    type="text"
+                    id="signup-name"
+                    name="Full Name"
+                    placeholder="Full Name..."
+                    required
+                    />
+                </div>
+
+                <div class="input-section">
+                    <label for="signup-name">School Name</label>
+                    <br/>
+                    <input
+                    type="text"
+                    id="signup-school-name"
+                    name="School Name"
+                    placeholder="School Name..."
+                    required
+                    />
+                </div>
+
+                <br/><br/><br/>
+                
+                <div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;">
+                    <div class="input-section">
+                        <label for="signup-name">Address Line 1<span style="color:red">*</span></label>
+                        <br/>
+                        <input
+                        type="text"
+                        id="signup-address-1"
+                        name="Address Line 1"
+                        placeholder="Address Line 1..."
+                        required
+                        />
+                    </div>
+
+                    <br/>
+                    <br/>
+                    
+                    <div class="input-section">
+                        <label for="signup-name">Address Line 2</label>
+                        <br/>
+                        <input
+                        type="text"
+                        id="signup-address-2"
+                        name="Address Line 2"
+                        placeholder="Address Line 2..."
+                        />
+                    </div>
+                
+                <div class="input-section">
+                    <label for="signup-name">City/Town<span style="color:red">*</span></label>
+                    <br/>
+                    <input
+                    type="text"
+                    id="signup-city"
+                    name="City/Town"
+                    placeholder="City/Town..."
+                    required
+                    />
+                </div>
+                
+                <div class="input-section">
+                    <label for="signup-name">State<span style="color:red">*</span></label>
+                    <br/>
+                    <input
+                    type="text"
+                    id="signup-state"
+                    name="State"
+                    placeholder="State..."
+                    required
+                    />
+                </div>
+                
+                <div class="input-section">
+                    <label for="signup-name">ZIP Code<span style="color:red">*</span></label>
+                    <br/>
+                    <input
+                    type="number"
+                    id="signup-zip"
+                    name="ZIP Code"
+                    placeholder="ZIP Code..."
+                    required
+                    maxlength="5"
+                    oninput="this.value=this.value.slice(0,this.maxLength)"
+                    />
+                </div>
+            </div>
+
+                <h3>2. Send a payment of $49.99 to the following PayPal link <b>with the following information in the memo</b>:<br/>
+                    <ul>
+                        <li>Your full name</li>
+                        <li>The following code: <span style="font-weight: normal; font-style: italic; font-size: 80%;">(Click to copy)</span>
+
+                            <script>
+                                function copyText() {
+                                    var copyText = document.getElementById("code");
+
+                                    copyText.select();
+                                    copyText.setSelectionRange(0, 99999);
+
+                                    navigator.clipboard.writeText(copyText.value);
+
+                                    document.getElementById("copied").style.opacity = 1;
+                                    document.getElementById("copied").style.transform = "scale(1)";
+                                    setTimeout(() => {
+                                        document.getElementById("copied").style.opacity = 0;
+                                        document.getElementById("copied").style.transform = "scale(0)";
+                                        
+                                    }, 2000);
+                                }
+                            </script>
+
+                            <input type="text" readonly value="asdjkfjgf" class="code" id="code" style="text-align: center; font-size: 120%;" onclick="copyText()"/>
+                            <span style="font-size: 80%; font-style: italic; color: gray; font-weight: 200; opacity: 0; transform: scale(0);" id="copied">
+                                Copied!
+                            </span>
+                        </li>
+                    </ul></h3>
+                    <a target="_blank" style="text-align:center" href="https://www.paypal.com/paypalme/char787"><button>PayPal Link</button></a>
+                <p style="color: rgb(245, 70, 70); font-weight: bold;"><span style="font-size: 300%">!</span> Your order will NOT be processed until payment with the required information is recieved.</p>
+
+                <h3>3. Make an account by entering the information below:</h3>
+                
+                <div style="background-color: #4b629933; width:40vw; margin:auto; padding:20px; border-radius:20px">
+                    <div class="input-section">
+                        <label for="signup-email">Email<span style="color:red">*</span></label>
+                        <br/>
+                        <input
+                        type="text"
+                        id="signup-email"
+                        name="Email"
+                        placeholder="Email..."
+                        required
+                        />
+                    </div>
+                    <div class="input-section">
+                        <label for="signup-password">Password<span style="color:red">*</span></label>
+                        <br/>
+                        <input
+                        type="password"
+                        id="signup-password"
+                        name="Password"
+                        placeholder="Password..."
+                        required
+                        />
+                    </div>
+                    <div class="input-section">
+                        <label for="signup-password-confirm">Confirm Password<span style="color:red">*</span></label>
+                        <br/>
+                        <input
+                        type="password"
+                        id="signup-password-confirm"
+                        name="Confirm Password"
+                        placeholder="Confirm Password..."
+                        required
+                        />
+                    </div>
+                </div>
+                <h3 id="error-msg" class="error-msg"></h3>
+                <h3 id="success-msg" class="success-msg"></h3>
+            <br />
+            <button onclick="signup(code)">Place Order</button>
+            <br />
+            <br />
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="footer-horizontal">
+            <div class="footer-content">
+                <h3>
+                    HereCard
+                </h3>
+                <hr>
+                <p>Akshat Sehgal</p>
+                <p>Charlie Huang</p>
+                <p>Yashmit Bhaverisetti</p>
+            </div>
+            <div class="footer-content">
+                <h3>
+                    Contact
+                </h3>
+                <hr>
+                <p><a href="mailto:charliehuang@char787.com" target="_blank">charliehuang@char787.com</a></p>
+            </div>
+            <div class="footer-content">
+                <h3>Location</h3>
+                <hr>
+                <p>Planet Earth</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var code = new Date().getTime();
+        document.getElementById("code").value = code;
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="dbStuff.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
