@@ -1,14 +1,12 @@
 # HereCard
-This is the FRONTEND repository for HereCard.
 
 ## Website: [Click](https://herecard.tech/)
+## FRONTEND Repository: [ayy-akshat/HereCard](https://github.com/ayy-akshat/HereCard)
 ## BACKEND Repository: [ayy-akshat/HereCardBackend](https://github.com/ayy-akshat/HereCardBackend)
 
-### *The pitch video link is in Devpost.*
+### *Pitch video link: [Watch on YouTube](https://youtu.be/3yAkVwxWdqA).*
 
 ---
-
-# HereCard
 
 ## HereCard- A faster way for attendance for students AND teachers!
 
@@ -44,3 +42,22 @@ On the website, there is a section to make an order request. This includes a Pay
 In a practical application of this product, there would be a maintenance team that approves the product requests, also managing the payments.
 To be more practical for the payment, we could have it implemented into the actual website rather than having a PayPal.
 The best idea for a practically made website for this product would have the process of the order request being automated, with the product ID coming with the physical product, that the user can link to their account.
+Finally, we can have better security rules in the database to make the site more secure.
+
+---
+
+## Why we submitted to these categories:
+
+* Education: With teachers losing precious time that could be used for teaching, our product makes the process of attendance seamless. It greatly reduces the amount of work teachers need to do in their lives, allowing them to dedicate more energy into their students' success.
+
+* Social Good: Increasing the time teachers have in class to teach and making it easier to keep track of attendance will help in the long run, as it will reduce the hassle of inputting attendance, making it much more simple and smooth.
+
+* Web: Having a website to track attendance makes the product easily accessible and usable on all devices, improving accessibility. The web portion obtains data from and seamlessly integrates with the hardware portion to provide a polished product that combines many different software/hardware tools together.
+
+* Cloud: Storing the attendance data in the cloud allows teachers to be able to keep track of attendance from any physical location or device without having to have locally stored files. It is also designed to integrate closely with all of the components in our product, which is why it is able to run smoothly with no problems.
+
+* Domain: Having a simple domain name such as the one we have is key to having a simple and accessible website. Our domain name, "[herecard.tech](herecard.tech)" combines attendance *(hence the "here")*, the RFID cards used in our product *(hence the "card")*, and the idea of technological advancement *(hence the "tech")*.
+
+* Hardware: Our product closely integrated a variety of hardware components including an Arduino, Raspberry Pi, an RFID sensor, and an LCD display, all working together in a circuit to interact with the web and backend portions of the product to create an overall polished product.
+
+* AB InBev (Brighter Future): This product introduces a technological advancement involving automation in our societies, advancing humanity further in technology.
